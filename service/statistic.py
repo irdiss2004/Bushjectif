@@ -2,6 +2,8 @@ from fastapi import HTTPException
 from models import Goal
 from datatime import datetime
 
+from service import dasboard
+
 
 
 existing_goal= db.query(Goal).filter(Goal.user_id == user_id).all()
